@@ -11,6 +11,7 @@ function logout () {
     logoutButton.onclick = function () {
         var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
         var theUrl = "https://54.172.190.202:443/logout";
+        xmlhttp.withCredentials = true;
 
         xmlhttp.open("DELETE", theUrl);
         alert("Logged out");

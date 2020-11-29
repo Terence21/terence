@@ -22,6 +22,7 @@ function loginForm () {
 
         var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
         var theUrl = "https://54.172.190.202:443/login";
+        xmlhttp.withCredentials = true;
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200){
